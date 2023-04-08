@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.7;
+
+contract simple {
+    int negOrPos; 
+    uint unsgnd;
+    bool prpo;
+    address first;
+
+    function setNegOrPos(int _negOrPos) public {
+        negOrPos = _negOrPos;
+    }
+    function setUnsgnd(uint _Unsgnd) public {
+        unsgnd = _Unsgnd;
+    }
+    function setprpo(bool _prpo) public {
+        prpo = _prpo;
+    }
+    function setfirst(address _first) public {
+        first = _first;
+    }
+
+}
