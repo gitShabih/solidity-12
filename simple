@@ -1,23 +1,35 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.7;
+pragma solidity ^0.8.7;
 
 contract simple {
-    int negOrPos; 
-    uint unsgnd;
-    bool prpo;
-    address first;
+    int a; 
+    uint b;
+    bool c;
+    address d;
 
-    function setNegOrPos(int _negOrPos) public {
-        negOrPos = _negOrPos;
+    function setA(int _a) public {
+        a = _a;
     }
-    function setUnsgnd(uint _Unsgnd) public {
-        unsgnd = _Unsgnd;
+    function setB(uint _b) public {
+        b = _b;
     }
-    function setprpo(bool _prpo) public {
-        prpo = _prpo;
+    function setC(bool _c) public {
+        c = _c;
     }
-    function setfirst(address _first) public {
-        first = _first;
+    function setD(address _d) public {
+        d = _d;
     }
+    function getA() public view returns(int) {
+        return a;
+    }
+    function getB() public view returns(uint) {
+        return b;
+    }
+    function getC() public view returns(bool) {
+        return c;
 
+    }
+    function getD() public view returns(address) {
+        return d;
+    }
 }
